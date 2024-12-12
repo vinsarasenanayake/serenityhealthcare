@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Serenity Health Care - Pharmacy</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- Header section with logo and navigation menu -->
+    <header>
+        <!-- Logo with link to home page -->
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+        <!-- Navigation menu -->
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="consulting.html">Consulting</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="journey.html">Journey</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="registration.html">
+                <img src="images/person.png" width="35" height="35" alt="Register"/>
+            </a>
+        </div>
+    </header>
+    <!-- Main content of the page -->
+    <main class="mainsection">
+        <!-- Pharmacy Section Heading -->
+        <div class="pharmacy">
+            <h1>Order Your Medicines Easily</h1><br>
+        </div><br><br>
+        <section>
+        <!-- Pharmacy Products Grid -->
+        <div class="pharmacygrid">
+            <!-- Analgesics Products -->
+            <div class="pharmacygrid-box">
+                <img src="images/analgesic1.png" alt="Tylenol Extra Strength">
+                <h3>Tylenol Extra Strength (Acetaminophen)</h3>
+                <p>Price: $14.99</p>
+                <div class="enterqty"><input type="number" id="Tylenol Extra Strength (Acetaminophen)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Tylenol Extra Strength (Acetaminophen)" data-price="14.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/analgesic2.png" alt="Advil">
+                <h3>Advil (Ibuprofen)</h3>
+                <p>Price: $12.49</p>
+                <div class="enterqty"><input type="number" id="Advil (Ibuprofen)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Advil (Ibuprofen)" data-price="12.49">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/analgesic3.png" alt="Motrin">
+                <h3>Motrin (Ibuprofen)</h3>
+                <p>Price: $10.99</p>
+                <div class="enterqty"><input type="number" id="Motrin (Ibuprofen)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Motrin (Ibuprofen)" data-price="10.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/analgesic4.png" alt="Excedrin">
+                <h3>Excedrin (Acetaminophen, Aspirin, Caffeine)</h3>
+                <p>Price: $15.99</p>
+                <div class="enterqty"><input type="number" id="Excedrin (Acetaminophen, Aspirin, Caffeine)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Excedrin (Acetaminophen, Aspirin, Caffeine)" data-price="15.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/analgesic5.png" alt="Panadol">
+                <h3>Panadol (Paracetamol)</h3>
+                <p>Price: $9.99</p>
+                <div class="enterqty"><input type="number" id="Panadol (Paracetamol)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Panadol (Paracetamol)" data-price="9.99" >Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/analgesic6.png" alt="Aspirin">
+                <h3>Aspirin (Acetylsalicylic Acid)</h3>
+                <p>Price: $7.99</p>
+                <div class="enterqty"><input type="number" id="Aspirin (Acetylsalicylic Acid)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Aspirin (Acetylsalicylic Acid)" data-price="7.99">Add to Cart</button>
+            </div>
+
+            <!-- Antibiotics Products -->
+            <div class="pharmacygrid-box">
+                <img src="images/antibiotic1.png" alt="Amoxicillin">
+                <h3>Amoxicillin</h3>
+                <p>Price: $25.99</p>
+                <div class="enterqty"><input type="number" id="Amoxicillin" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Amoxicillin" data-price="25.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antibiotic2.png" alt="Ciprofloxacin">
+                <h3>Ciprofloxacin</h3>
+                <p>Price: $18.49</p>
+                <div class="enterqty"><input type="number" id="Ciprofloxacin" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Ciprofloxacin" data-price="18.49">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antibiotic3.png" alt="Azithromycin">
+                <h3>Azithromycin</h3>
+                <p>Price: $22.99</p>
+                <div class="enterqty"><input type="number" id="Azithromycin" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Azithromycin" data-price="22.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antibiotic4.png" alt="Doxycycline">
+                <h3>Doxycycline</h3>
+                <p>Price: $19.99</p>
+                <div class="enterqty"><input type="number" id="Doxycycline" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Doxycycline" data-price="19.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antibiotic5.png" alt="Clindamycin">
+                <h3>Clindamycin</h3>
+                <p>Price: $30.99</p>
+                <div class="enterqty"><input type="number" id="Clindamycin" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Clindamycin" data-price="30.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antibiotic6.png" alt="Levofloxacin">
+                <h3>Levofloxacin</h3>
+                <p>Price: $27.49</p>
+                <div class="enterqty"><input type="number" id="Levofloxacin" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Levofloxacin" data-price="27.49">Add to Cart</button>
+            </div>
+
+            <!-- Antidepressants Products -->
+            <div class="pharmacygrid-box">
+                <img src="images/antidepressant1.png" alt="Fluoxetine">
+                <h3>Fluoxetine (Prozac)</h3>
+                <p>Price: $35.99</p>
+                <div class="enterqty"><input type="number" id="Fluoxetine (Prozac)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Fluoxetine (Prozac)" data-price="35.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antidepressant2.png" alt="Citalopram">
+                <h3>Citalopram (Celexa)</h3>
+                <p>Price: $33.49</p>
+                <div class="enterqty"><input type="number" id="Citalopram (Celexa)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Citalopram (Celexa)" data-price="33.49">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antidepressant3.png" alt="Sertraline">
+                <h3>Sertraline (Zoloft)</h3>
+                <p>Price: $38.99</p>
+                <div class="enterqty"><input type="number" id="Sertraline (Zoloft)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Sertraline (Zoloft)" data-price="38.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antidepressant4.png" alt="Paroxetine">
+                <h3>Paroxetine (Paxil)</h3>
+                <p>Price: $32.99</p>
+                <div class="enterqty"><input type="number" id="Paroxetine (Paxil)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Paroxetine (Paxil)" data-price="32.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antidepressant5.png" alt="Escitalopram">
+                <h3>Escitalopram (Lexapro)</h3>
+                <p>Price: $36.99</p>
+                <div class="enterqty"><input type="number" id="Escitalopram (Lexapro)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Escitalopram (Lexapro)" data-price="36.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antidepressant6.png" alt="Venlafaxine">
+                <h3>Venlafaxine (Effexor)</h3>
+                <p>Price: $40.49</p>
+                <input type="number" id="apple" placeholder="Enter Qty" min="0">
+                <button class="add-to-cart" data-product="Apple" data-price="40.49">Add to Cart</button>
+            </div>
+
+            <!-- Antihistamines Products -->
+            <div class="pharmacygrid-box">
+                <img src="images/antihistamine1.png" alt="Diphenhydramine">
+                <h3>Diphenhydramine (Benadryl)</h3>
+                <p>Price: $9.99</p>
+                <div class="enterqty"><input type="number" id="Diphenhydramine (Benadryl)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Diphenhydramine (Benadryl)" data-price="9.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antihistamine2.png" alt="Loratadine">
+                <h3>Loratadine (Claritin)</h3>
+                <p>Price: $12.49</p>
+                <div class="enterqty"><input type="number" id="Loratadine (Claritin)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Loratadine (Claritin)" data-price="12.49">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antihistamine3.png" alt="Fexofenadine">
+                <h3>Fexofenadine (Allegra)</h3>
+                <p>Price: $11.99</p>
+                <div class="enterqty"><input type="number" id="Fexofenadine (Allegra)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Fexofenadine (Allegra)" data-price="11.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antihistamine4.png" alt="Cetirizine">
+                <h3>Cetirizine (Zyrtec)</h3>
+                <p>Price: $10.49</p>
+                <div class="enterqty"><input type="number" id="Cetirizine (Zyrtec)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Cetirizine (Zyrtec)" data-price="10.49">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antihistamine5.png" alt="Chlorpheniramine">
+                <h3>Chlorpheniramine (Chlor-Trimeton)</h3>
+                <p>Price: $8.99</p>
+                <div class="enterqty"><input type="number" id="Chlorpheniramine (Chlor-Trimeton)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Chlorpheniramine (Chlor-Trimeton)" data-price="8.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antihistamine6.png" alt="Desloratadine">
+                <h3>Desloratadine (Clarinex)</h3>
+                <p>Price: $14.99</p>
+                <div class="enterqty"><input type="number" id="Desloratadine (Clarinex)" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Desloratadine (Clarinex)" data-price="14.99">Add to Cart</button>
+            </div>
+
+            <!-- Antihypertensives Products -->
+            <div class="pharmacygrid-box">
+                <img src="images/antihypertensive1.png" alt="Lisinopril">
+                <h3>Lisinopril</h3>
+                <p>Price: $18.99</p>
+                <div class="enterqty"><input type="number" id="Lisinopril" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Lisinopril" data-price="18.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antihypertensive2.png" alt="Amlodipine">
+                <h3>Amlodipine</h3>
+                <p>Price: $16.99</p>
+                <div class="enterqty"><input type="number" id="Amlodipine" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Amlodipine" data-price="16.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antihypertensive3.png" alt="Losartan">
+                <h3>Losartan</h3>
+                <p>Price: $21.49</p>
+                <div class="enterqty"><input type="number" id="Losartan" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Losartan" data-price="21.49">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antihypertensive4.png" alt="Hydrochlorothiazide">
+                <h3>Hydrochlorothiazide</h3>
+                <p>Price: $15.99</p>
+                <div class="enterqty"><input type="number" id="hydrochlorothiazide" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Hydrochlorothiazide" data-price="15.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antihypertensive5.png" alt="Enalapril">
+                <h3>Enalapril</h3>
+                <p>Price: $19.99</p>
+                <div class="enterqty"><input type="number" id="enalapril" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Enalapril" data-price="19.99">Add to Cart</button>
+            </div>
+            <div class="pharmacygrid-box">
+                <img src="images/antihypertensive6.png" alt="Metoprolol">
+                <h3>Metoprolol</h3>
+                <p>Price: $17.99</p>
+                <div class="enterqty"><input type="number" id="metoprolol" placeholder="Enter Qty" min="0"></div>
+                <button class="add-to-cart" data-product="Metoprolol" data-price="17.99">Add to Cart</button>
+            </div>
+        </div>
+        </section>
+        <div class="cart-section"></div>
+            <h2 class="tableh2">Shopping Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total: $0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="btncontainer2">
+                <a href="order.html"><button class="pharmacypgbtn">Buy Now</button></a>
+                <button class="pharmacypgbtn" id="clearCartBtn">Clear Cart</button>
+            </div>
+        </div>
+    
+        <script src="styles/script.js"></script>
+    </main><br>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <!-- Footer Content Container -->
+            <div class="footer-content">
+                <!-- Logo with link to home page -->
+                <div class="footer-section">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <!-- Paragraph Section -->
+                <div class="footer-section">
+                    <p>We actively participate in and sponsor various outreach initiatives designed to promote health and well-being. From free health screenings to educational workshops, our programs aim to support and engage with the community.</p>
+                </div>
+                <!-- Contact Information Section -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Phone: (011) 2 456 789</li>
+                        <li>Email: serenityhealthcare@gmail.com</li>
+                        <li>Location: 88, De Mel road, Colombo, Sri Lanka</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer Copyright -->
+            <div class="footer-copyright">
+                <p>&copy; 2024 Serenity Health Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer Section -->
+</body>
+</html>

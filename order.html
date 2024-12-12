@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Serenity Health Care - Order</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- Header section with logo and navigation menu -->
+    <header>
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="consulting.html">Consulting</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="journey.html">Journey</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="registration.html">
+                <img src="images/person.png" width="35" height="35" alt="Register"/>
+            </a>
+        </div>
+    </header>
+
+    <main class="mainsection">
+        <!-- Order Page header -->
+        <div class="pharmacy">
+            <h1>We're happy to help you</h1><br>
+        </div>
+        <!-- Order Page Introduction Paragraph -->
+        <p class="herop">Our pharmacy provides easy access to medications and health products, with expert pharmacists offering personalized advice and ensuring accurate, confidential service.</p>
+        <br><br>
+        <!-- Order Form Section -->
+        
+        <section class="form" id="register">
+            <div class="container">
+                <div>
+                    <h2 class="tableh2">Order Summary</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Unit Price</th>
+                                <th>Total Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orderSummary"></tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total</td>
+                                <td id="orderTotal">0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div><br>
+            <h2>Order Now Form</h2>
+            <form id="orderForm" onsubmit="return handleOrder()">
+                <!-- Personal Details -->
+                <div class="input">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                </div>
+                <!-- Payment Information -->
+                <div class="input">
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="number" id="cardNumber" name="cardNumber" placeholder="Enter your card number" required>
+                </div>
+                <div class="input">
+                    <label for="expiryDate">Expiry Date (MM/YY):</label>
+                    <input type="month" id="expiryDate" name="expiryDate" required>
+                </div>
+                <div class="input">
+                    <label for="cvv">CVV:</label>
+                    <input type="number" id="cvv" name="cvv" placeholder="Enter your CVV number" required>
+                </div>
+
+                <!-- Action Buttons -->
+                 <div class="btncontainer">
+                    <button type="submit">Pay</button>
+                    <button type="button" onclick="saveAsFavourite()">Add to Favourites</button>
+                    <button type="button" onclick="applyFavourites()">Apply Favourites</button>
+                 </div>
+            </form>
+        </section>
+
+        <!-- Order Confirmation Message Box -->
+        <div id="messageBox" class="message-box" style="display:none;">
+            <section id="confirmation">
+                <h1>Order Confirmation</h1>
+                <p>Thank you for your order! Your transaction was successful.</p>
+                <p>Your estimated delivery date is: <span id="deliveryDate"></span></p>
+                <button onclick="closeMessage()">Close</button>
+            </section>
+        </div>
+        <script src="styles/script.js"></script>        
+    </main><br>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <!-- Footer Content Container -->
+            <div class="footer-content">
+                <!-- Logo with link to home page -->
+                <div class="footer-section">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <!-- Paragraph Section -->
+                <div class="footer-section">
+                    <p>We actively participate in and sponsor various outreach initiatives designed to promote health and well-being. From free health screenings to educational workshops, our programs aim to support and engage with the community.</p>
+                </div>
+                <!-- Contact Information Section -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Phone: (011) 2 456 789</li>
+                        <li>Email: serenityhealthcare@gmail.com</li>
+                        <li>Location: 88, De Mel road, Colombo, Sri Lanka</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer Copyright -->
+            <div class="footer-copyright">
+                <p>&copy; 2024 Serenity Health Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer Section -->
+</body>
+</html>

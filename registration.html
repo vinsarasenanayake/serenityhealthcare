@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Serenity Health Care - Services</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- Header section with logo and navigation menu -->
+    <header>
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="consulting.html">Consulting</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="journey.html">Journey</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content of the page -->
+    <main class="mainsection">
+        <div class="services">
+            <h1>Services We Provide</h1><br>
+        </div>
+        <p class="herop">We provide compassionate, comprehensive care with 24/7 emergency services, advanced surgery, diagnostics, lab testing, pediatric and maternity care, rehab, and outpatient services.</p>
+
+        <!-- Registration Form Section -->
+        <section class="form" id="register">
+            <h2>Registration Form</h2>
+            <form id="orderForm" action="#" method="post" onsubmit="return validateForm()">
+                <!-- Name Input -->
+                <div class="input">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <!-- Email Input -->
+                <div class="input">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <!-- Phone Input -->
+                <div class="input">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Register Now Button -->
+                <div class="container2">
+                    <button type="submit" id="showMessageBtn">Register Now</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Register Confirmation Message Box -->
+        <div id="messageBox" class="message-box" style="display:none;">
+            <section id="confirmation">
+                <h1 id="messageContent">Registered</h1>
+                <p id="messageContent">Thank you for registering with us. We warmly welcome you to our Serenity Health Care family.</p>
+                <button onclick="closeMessage()">Close</button>
+            </section>
+        </div>
+
+        <script src="styles/script.js"></script>
+    </main><br>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="footer-section">
+                    <p>We actively participate in and sponsor various outreach initiatives designed to promote health and well-being. From free health screenings to educational workshops, our programs aim to support and engage with the community.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Phone: (011) 2 456 789</li>
+                        <li>Email: serenityhealthcare@gmail.com</li>
+                        <li>Location: 88, De Mel road, Colombo, Sri Lanka</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Serenity Health Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
